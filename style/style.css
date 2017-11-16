@@ -67,3 +67,38 @@ height: 100%;
 background:#000;
 cursor: pointer;
 }
+
+/*TITRE */
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  transform: translateY(-50%);
+}
+h2 {
+  text-transform:uppercase;
+  letter-spacing:1px;
+  width:280px;
+  position:relative;
+}
+h2:after {
+  content:"";
+  display: block;
+  height: 80%;
+  width: 100%;
+  background: red;
+  position: absolute;
+  top:10px;left:-5px;
+  z-index: -1;
+  animation: monAnim 1s infinite ease-in-out alternate;
+}
+@keyframes monAnim {
+  0%{transform: translateY(4px) translateX(-12px);}
+  100%{transform: translateY(-12px) translateX(4px);}
+}
