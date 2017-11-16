@@ -1,3 +1,33 @@
+function CreerFormulaire() {
+  document.getElementById('form').innerHTML += '<fieldset id="block">'+
+                              '<div style="text-align: center;" id="formulaire">'+
+                                  '<label for="nom">Nom:</label>'+'<br />'+
+                                  '<input class="form" type="text" id="nom" />'+'<br />'+
+                                  '<br />'+
+                                  '<label for="email">Email:</label>'+
+                                  '<br />'+
+                                  '<input class="form" type="email" id="email" />'+'<br />'+
+                                  '<br />'+
+                                  '<label for="message">Message:</label>'+
+                                  '<br />'+
+                                  '<textarea class="form" id="message">'+'</textarea>'+'<br />'+
+                                  '<br />'+
+                                  '<input style="background-color: #0f7a2b; color: white;" type="button" value="Validé"/>'+'<br />'+
+                              '</div>'+
+                            '</fieldset>';
+
+}
+function SupprimerFormulaire() {
+  document.getElementById('form').innerHTML = "";
+}
+
+
+
+
+
+
+
+//---------------------ANIMATION BACKGROUND---------------------------
 {
 	class Robot {
 		constructor(color, light, size, x, y, struct) {

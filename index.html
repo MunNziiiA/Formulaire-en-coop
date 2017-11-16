@@ -1,42 +1,29 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="style/style.css">
-		<title>Formulaire Coop</title>
-	</head>
-	<body>
-<div style="position: absolute;">		
-		<form action="index.html" method="post">
-			<fieldset id="block">
-				<div style="text-align: center;" id="formulaire">
-					<label for="nom">Nom:</label>
-					<br />
-					<input class="form" type="text" id="nom" /><br />
-					<br />
-					<label for="email">Email:</label>
-					<br />
-					<input class="form" type="email" id="email" /><br />
-					<br />
-					<label for="message">Message:</label>
-					<br />
-					<textarea class="form" id="message"></textarea><br />
-					<br />
-					<input type="button" value="Validé"/><br />
-				</div>
-			</fieldset>
-			</form>
+  <head>
+    <meta charset="utf-8">
+    <title>Formulaire Coop</title>
+    <link rel="stylesheet" href="style/style.css">
+  </head>
+  <body style="text-align: center;">
+    <div id="div">
+    <form id="form" action="index.html" method="post">
+    </form><br>
+    </div>
+    <div id="dive">
+    <input style="color: white; background-color: #0f7a2b;" onclick="CreerFormulaire()" type="button" value="Creer Formulaire">
+    <input style="color: white; background-color: #7a0f0f;"onclick="SupprimerFormulaire()" type="button" value="Supprimer Formulaire">
+</div>
+    <canvas id="can"></canvas>
 
+    <script src="script/script.js"></script>
 
-		<input onclick="CreerFormulaire()" type="button" value="Cree Formulaire"></div>
-		<canvas></canvas>
-		<script src="script/script.js"></script>
-		
-	</body>
+  </body>
 </html>
 
 
 
-                  ,--.    ,--.
+                 <!--  ,--.    ,--.
                  ((O ))--((O ))
                ,'_`--'____`--'_`.
               _:  ____________  :_
@@ -63,4 +50,4 @@
                (_______)(_______)
                (_______)(_______)
               |        ||        |
-              '--------''--------'
+              '--------''--------' -->
