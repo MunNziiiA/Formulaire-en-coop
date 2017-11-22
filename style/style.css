@@ -32,7 +32,7 @@ height: 5em;
 resize: vertical;
 }
 .button {
-        padding-left: 90px;
+padding-left: 90px;
 }
 button {
 margin-left: .5em;
@@ -40,18 +40,18 @@ margin-left: .5em;
 #block {
 background-color: black;
 border-color: white;
-height: 423px;
+height: 30%;
 }
 #div {
 position: absolute;
 left: 50%;
 margin-left: -216px;
-top: 95px;
+top: 20%;
 }
 #dive {
-    position: absolute;
-    left: 50%;
-    margin-left: -302px;
+position: absolute;
+left: 50%;
+margin-left: -302px;
 }
 /*ANIMATION*/
 body, html {
@@ -67,38 +67,36 @@ height: 100%;
 background:#000;
 cursor: pointer;
 }
-
 /*TITRE */
-
-
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300);
-
 body {
-  font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
 }
-
 .wrapper {
-  position: relative;
-  transform: translateY(-50%);
+position: absolute;
+transform: translateY(-50%);
+text-align: center;
 }
 h2 {
-  text-transform:uppercase;
-  letter-spacing:1px;
-  width:280px;
-  position:relative;
+text-transform:uppercase;
+width:280px;
 }
 h2:after {
-  content:"";
-  display: block;
-  height: 80%;
-  width: 100%;
-  background: red;
-  position: absolute;
-  top:10px;left:-5px;
-  z-index: -1;
-  animation: monAnim 1s infinite ease-in-out alternate;
+content:"";
+display: block;
+height: 80%;
+width: 100%;
+background: #b71921;
+position: absolute;
+top:10px;left:-5px;
+z-index: -1;
+animation: monAnim 1s infinite ease-in-out alternate;
 }
 @keyframes monAnim {
-  0%{transform: translateY(4px) translateX(-12px);}
-  100%{transform: translateY(-12px) translateX(4px);}
+0%{transform: translateY(4px) translateX(-12px);}
+100%{transform: translateY(-12px) translateX(4px);}
+}
+#titre {
+	position: absolute;
+	margin-top: 40px;
 }
