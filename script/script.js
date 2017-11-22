@@ -20,7 +20,7 @@ function CreerQuestion() {
 var monId = 1;
 
 function CreerReponse() {
-  document.getElementById('reponse').innerHTML = '<label id="radio">Reponse :<br></label>'+'<br>'+
+  document.getElementById('reponse').innerHTML = '<label id="radio">Reponse :<br><br></label>'+'<br>'+
                                   '<input onclick="CreerRadio()" type="button" value="+">'+'<br>';
 
 }
@@ -33,9 +33,9 @@ function CreerRadio() {
 }
 
 
-	function SupprimerRadio(aSupprimer) {
-		document.getElementById(aSupprimer).innerHTML = "";
-	}
+function SupprimerRadio(aSupprimer) {
+	document.getElementById(aSupprimer).innerHTML = "";
+}
 
 
 
