@@ -1,25 +1,40 @@
 function CreerFormulaire() {
-	document.getElementById('form').innerHTML += '<fieldset id="block">'+
-        											'<div style="text-align: center;" id="formulaire">'+
-          												'<label for="nom">Nom:</label>'+'<br />'+
-          												'<input class="form" type="text" id="nom" />'+'<br />'+
-          												'<br />'+
-          												'<label for="email">Email:</label>'+
-          												'<br />'+
-          												'<input class="form" type="email" id="email" />'+'<br />'+
-          												'<br />'+
-          												'<label for="message">Message:</label>'+
-          												'<br />'+
-          												'<textarea class="form" id="message">'+'</textarea>'+'<br />'+
-          												'<br />'+
-          												'<input type="button" value="Validé"/>'+'<br />'+
+	document.getElementById('form').innerHTML = '<fieldset id="block">'+
+        											'<div style="text-align: center">'+
+                                '<div id="question">'+
+                                '<input onclick="CreerQuestion()" type="button" value="Creer une question">'+
+                                '</div><br>'+
+                                '<div id="reponse">'+
+                                '<input onclick="CreerReponse()" type="button" value="Creer une reponse">'+
+                                '</div>'+'<br>'+
+          											'<input style="background-color: #0f7a2b; color: white" type="button" value="Validé"/>'+'<br>'+
         											'</div>'+
       											'</fieldset>';
 
 }
+
+function CreerQuestion() {
+  document.getElementById('question').innerHTML = '<label>Question :</label><br>'+
+                                  '<input class="form" type="text"><br>';
+}
+
+function CreerReponse() {
+  document.getElementById('reponse').innerHTML = '<label id="radio">Reponse :<br></label>'+
+                                  '<br>'+
+                                  '<input onclick="CreerRadio()" type="button" value="+">'+'<br>';
+}
+
+function CreerRadio() {
+  document.getElementById('radio').innerHTML += '<input type="radio"><input type="text" <br>';
+}
+
 function SupprimerFormulaire() {
 	document.getElementById('form').innerHTML = "";
 }
+
+
+
+
 
 { 
   class Robot { 
